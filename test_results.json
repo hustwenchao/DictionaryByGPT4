@@ -1,0 +1,454 @@
+[
+  {
+    "date": "2024-12-27 16:05:57",
+    "score": 10,
+    "total": 10,
+    "details": [
+      {
+        "word": "portugal",
+        "meaning": "### 分析词义\n\n  \n\n\"Portugal\"是欧洲的一个国家名称，位于伊比利亚半岛西南部，西临大西洋，东北接壤西班牙",
+        "user_answer": "portugal",
+        "is_correct": true
+      },
+      {
+        "word": "grocer",
+        "meaning": "**分析词义**  \n\"Grocer\"是英语中的一个名词，指的是售卖食品、家居用品等商品的商人或商店",
+        "user_answer": "grocer",
+        "is_correct": true
+      },
+      {
+        "word": "frequently",
+        "meaning": "## 分析词义\n\n  \n\n\"频繁地，经常地\"是 \"frequently\"的基本含义",
+        "user_answer": "frequently",
+        "is_correct": true
+      },
+      {
+        "word": "gust",
+        "meaning": "### 分析词义\n\n  \n\n\"Gust\"主要有两个含义：一是风的突然猛烈一吹，即一阵强风；二是某种情绪的突发，如一股怒火",
+        "user_answer": "gust",
+        "is_correct": true
+      },
+      {
+        "word": "mean",
+        "meaning": "### 分析词义\n\n  \n\n\"Mean\" 是一个英文单词，主要有两个词义：\n\n  \n\n1.  作为动词，\"mean\" 的基本意思是“意味着”，“表示”",
+        "user_answer": "mean",
+        "is_correct": true
+      },
+      {
+        "word": "wretched",
+        "meaning": "### 分析词义\n\n  \n\n\"Wretched\" 是一个形容词，意思是“极差的”或“痛苦的”",
+        "user_answer": "wretched",
+        "is_correct": true
+      },
+      {
+        "word": "dial",
+        "meaning": "### 分析词义\n\n  \n\n\"Dial\" 作为动词，其主要含义是拨打电话或旋转调节设备",
+        "user_answer": "dial",
+        "is_correct": true
+      },
+      {
+        "word": "grow",
+        "meaning": "**分析词义**\n\n  \n\n\"Grow\"是英语的一个常用动词，主要含义是“增长”或“发展”",
+        "user_answer": "grow",
+        "is_correct": true
+      },
+      {
+        "word": "prone",
+        "meaning": "### 分析词义\n\n  \n\n*   \"Prone\" 是一个形容词，主要有两个含义",
+        "user_answer": "prone",
+        "is_correct": true
+      },
+      {
+        "word": "walk",
+        "meaning": "### 分析词义\n\n  \n\n\"Walk\" 是一个英语单词，作为动词，是“行走或步行”的意思，例如：\n\n  \n\n1.  I walk to work every day. (我每天都步行去上班",
+        "user_answer": "walk",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "date": "2024-12-27 17:19:32",
+    "score": 8,
+    "total": 10,
+    "details": [
+      {
+        "word": "conductor",
+        "meaning": "1. 指挥家：在音乐领域，指负责指挥乐队或合唱团的人。\n2. 导体：在物理学中，指能够传导电流或热量的物质。\n3. 列车员：在交通运输中，指负责管理列车运行和乘客服务的人员。\n4. 售票员：在公共交通中，指负责售票和检票的工作人员。",
+        "user_answer": "conductor",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "upper",
+        "meaning": "1. 上面的，上部的\n2. 较高的，上层的\n3. 鞋帮，鞋面\n4. 兴奋剂（俚语）\n5. 上铺（火车或船上的）",
+        "user_answer": "upper",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "closely",
+        "meaning": "1. 紧密地；密切地\n2. 仔细地；严密地\n3. 接近地；靠近地",
+        "user_answer": "closely",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "born",
+        "meaning": "1. 出生，诞生。\n2. 天生的，与生俱来的。\n3. 开始存在或形成的。",
+        "user_answer": "born",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "carpet",
+        "meaning": "1. 地毯：一种铺在地板上的厚重织物，用于装饰或保暖。\n2. 覆盖物：像地毯一样覆盖某物的东西，如草地或雪地。\n3. 大量：形容某物像地毯一样密集或广泛分布。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "Scotch",
+        "meaning": "1. 苏格兰的；苏格兰人的；苏格兰语的。\n2. 苏格兰威士忌。\n3. 阻止；制止；扑灭。\n4. 轻蔑的；鄙视的。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "disturbing",
+        "meaning": "1. 令人不安的；使人烦恼的。\n2. 引起干扰的；扰乱秩序的。\n3. 令人困扰的；使人分心的。",
+        "user_answer": "disturbing",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "correct",
+        "meaning": "1. 正确的，准确的。\n2. 恰当的，合适的。\n3. 改正，纠正。\n4. 符合标准的，符合规范的。\n5. 端正的，得体的。",
+        "user_answer": "correct",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "bucket",
+        "meaning": "1. 桶，水桶：一种用于盛装液体或散装物品的容器，通常带有提手。\n2. 大量，许多：用于形容数量很多的事物。\n3. （机械）斗，铲斗：用于挖掘或搬运物料的设备部件。\n4. （篮球）篮筐：篮球比赛中用于投篮的目标。\n5. （俚语）快速移动或离开：用于形容迅速行动或离开。",
+        "user_answer": "bucket",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "fence",
+        "meaning": "1. 栅栏，围栏：用于围住或分隔土地、花园等的结构。\n2. 击剑：一种体育运动，使用剑进行对抗。\n3. 买卖赃物的人：非法交易赃物的人。\n4. 回避，搪塞：在谈话或争论中避免直接回答问题。",
+        "user_answer": "fence",
+        "is_correct": true,
+        "added_to_difficult": false
+      }
+    ]
+  },
+  {
+    "date": "2024-12-27 17:21:19",
+    "score": 6,
+    "total": 10,
+    "details": [
+      {
+        "word": "conductor",
+        "meaning": "1. 指挥家：在音乐领域，指负责指挥乐队或合唱团的人。\n2. 导体：在物理学中，指能够传导电流或热量的物质。\n3. 列车员：在交通运输中，指负责管理列车运行和乘客服务的人员。\n4. 售票员：在公共交通中，指负责售票和检票的工作人员。",
+        "user_answer": "conductor",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "green",
+        "meaning": "1. 绿色的，表示颜色。\n2. 环保的，与环境保护相关的。\n3. 未成熟的，指水果或蔬菜等还未成熟。\n4. 新鲜的，指事物或经验等是新的或未经处理的。\n5. 缺乏经验的，形容人在某方面不熟练或新手。\n6. 嫉妒的，形容人因羡慕而产生的情绪。",
+        "user_answer": "green",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "closely",
+        "meaning": "1. 紧密地；密切地\n2. 仔细地；严密地\n3. 接近地；靠近地",
+        "user_answer": "closely",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "courageous",
+        "meaning": "勇敢的；无畏的；有胆量的。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "offensive",
+        "meaning": "1. 冒犯的，无礼的\n2. 进攻性的，攻击性的\n3. 令人不快的，讨厌的\n4. 进攻，攻势（名词）",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "sticky",
+        "meaning": "1. 黏的，有黏性的。\n2. 棘手的，难处理的。\n3. 潮湿闷热的。\n4. 不情愿的，不愿意的。",
+        "user_answer": "sticky",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "bush",
+        "meaning": "1. 灌木；矮树丛。\n2. 未开垦的荒野；丛林。\n3. （机械的）衬套；轴衬。\n4. （澳大利亚和新西兰的）乡村地区。",
+        "user_answer": "bush",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "Scotch",
+        "meaning": "1. 苏格兰的；苏格兰人的；苏格兰语的。\n2. 苏格兰威士忌。\n3. 阻止；制止；扑灭。\n4. 轻蔑的；鄙视的。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "shall",
+        "meaning": "1. 表示将来时，用于第一人称，表示将要发生的事情。\n2. 用于疑问句中，征求对方的意见或建议。\n3. 用于正式或法律文件中，表示义务、命令或规定。\n4. 用于表示决心、承诺或威胁。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "grandfather",
+        "meaning": "1. 祖父；外祖父。\n2. 祖先；先辈。\n3. 创始人；奠基人。",
+        "user_answer": "grandfather",
+        "is_correct": true,
+        "added_to_difficult": false
+      }
+    ]
+  },
+  {
+    "date": "2024-12-27 17:25:45",
+    "score": 4,
+    "total": 10,
+    "details": [
+      {
+        "word": "delight",
+        "meaning": "1. 高兴；愉快；快乐\n2. 使人高兴的事物或人\n3. 满足；享受\n4. 使高兴；使愉快\n5. 感到高兴；感到愉快",
+        "user_answer": "delight",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "myself",
+        "meaning": "1. 我自己，用于强调或反身。\n2. 我本人，用于强调说话者本人。\n3. 我的正常状态，指身体或心理的健康状态。",
+        "user_answer": "myself",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "courageous",
+        "meaning": "勇敢的；无畏的；有胆量的",
+        "user_answer": "couragous",
+        "is_correct": false,
+        "added_to_difficult": false
+      },
+      {
+        "word": "affirmation",
+        "meaning": "1. 肯定；确认；断言。\n2. 支持；鼓励。\n3. （法律）正式声明；宣誓。\n4. 积极的陈述或声明。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "conductor",
+        "meaning": "1. 指挥家：在音乐领域，指负责指挥乐队或合唱团的人。\n2. 导体：在物理学中，指能够传导电流或热量的物质。\n3. 售票员：在公共交通中，指负责售票和检票的工作人员。\n4. 列车长：在铁路运输中，指负责列车运行和乘客安全的管理人员。",
+        "user_answer": "conductor",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "cozy",
+        "meaning": "1. 温暖舒适的，令人感到安逸的。\n2. 亲密的，友好的。\n3. 小而舒适的，温馨的。",
+        "user_answer": "warm",
+        "is_correct": false,
+        "added_to_difficult": false
+      },
+      {
+        "word": "clothes",
+        "meaning": "指人们穿在身上的衣物，包括上衣、裤子、裙子等。",
+        "user_answer": "clothes",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "cassette",
+        "meaning": "1. 盒式磁带：一种用于录音或播放音频的小型塑料盒，内含磁带。\n2. 暗盒：在摄影中，指装有胶卷的容器。\n3. 卡匣：在某些设备中，指可更换的模块或组件。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "carpet",
+        "meaning": "1. 地毯：一种铺在地板上的厚织物，用于装饰或保暖。\n2. 覆盖物：像地毯一样覆盖某物的东西，如草地或雪地。\n3. 大量：形容某物大量存在，如“a carpet of flowers”（一片花海）。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "boy",
+        "meaning": "1. 男孩，指未成年的男性。\n2. 儿子，指父母对儿子的称呼。\n3. 小伙子，用于称呼年轻的男性。\n4. 男仆，指在家庭或酒店中从事服务工作的男性。\n5. 男性朋友，用于称呼关系亲密的男性朋友。",
+        "user_answer": "carpet",
+        "is_correct": false,
+        "added_to_difficult": false
+      }
+    ]
+  },
+  {
+    "date": "2024-12-27 17:27:13",
+    "score": 4,
+    "total": 10,
+    "details": [
+      {
+        "word": "rating",
+        "meaning": "1. 等级；级别\n2. 评分；评级\n3. 收视率；收听率\n4. 信用等级\n5. 额定值；标称值",
+        "user_answer": "range",
+        "is_correct": false,
+        "added_to_difficult": false
+      },
+      {
+        "word": "periodic",
+        "meaning": "1. 定期的；周期性的\n2. 间歇的；时而发生的\n3. 化学元素周期表的",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "cassette",
+        "meaning": "1. 盒式磁带：一种用于录音或播放音频的小型塑料盒，内含磁带。\n2. 暗盒：在摄影中，指装有胶卷的容器。\n3. 卡匣：在某些设备中，指可更换的模块或组件。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "uphold",
+        "meaning": "1. 支持，维护（法律、原则等）。\n2. 保持，维持（传统、标准等）。\n3. 确认，认可（判决、决定等）。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "so",
+        "meaning": "1. 因此，所以\n2. 那么，这样\n3. 非常，如此\n4. 同样，也\n5. 表示程度或方式\n6. 用于引出结果或结论\n7. 用于强调某种情况或状态",
+        "user_answer": "so",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "carpet",
+        "meaning": "1. 地毯：一种铺在地板上的厚织物，用于装饰或保暖。\n2. 覆盖物：像地毯一样覆盖某物的东西，如草地或雪地。\n3. 大量：形容某物大量存在，如“a carpet of flowers”（一片花海）。",
+        "user_answer": "carpet",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "shall",
+        "meaning": "1. 用于第一人称，表示将来时，意为“将，会”。\n2. 用于疑问句中，表示征求对方意见或提出建议，意为“...好吗？要不要...？”。\n3. 用于陈述句中，表示命令、允诺、威胁等，意为“必须，应该”。\n4. 用于法律、规章等正式文件中，表示义务或规定，意为“应，必须”。",
+        "user_answer": "shall",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "derail",
+        "meaning": "1. 使（火车等）脱轨。\n2. 扰乱，打乱（计划、进程等）。",
+        "user_answer": "disturb",
+        "is_correct": false,
+        "added_to_difficult": false
+      },
+      {
+        "word": "tack",
+        "meaning": "1. 大头钉；图钉。\n2. 行动方针；策略。\n3. （航海）抢风航行；航向。\n4. 马具；鞍具。\n5. 临时缝纫；粗缝。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "lean",
+        "meaning": "1. 倾斜，倚靠\n2. 瘦的，无脂肪的\n3. 贫瘠的，不肥沃的\n4. 简洁的，精干的\n5. 依赖，依靠",
+        "user_answer": "lean",
+        "is_correct": true,
+        "added_to_difficult": false
+      }
+    ]
+  },
+  {
+    "date": "2024-12-27 17:33:03",
+    "score": 3,
+    "total": 10,
+    "details": [
+      {
+        "word": "weekday",
+        "meaning": "指一周中除了周末（通常是周六和周日）之外的工作日，通常为周一到周五。",
+        "user_answer": "workday",
+        "is_correct": false,
+        "added_to_difficult": false
+      },
+      {
+        "word": "doctor",
+        "meaning": "1. 医生，医师，指从事医疗职业的人员。\n2. 博士，指获得最高学术学位的人。\n3. 修理，修复，尤指对机械或设备的维修。\n4. 篡改，伪造，指对文件或数据的非法修改。",
+        "user_answer": "doctor",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "uphold",
+        "meaning": "1. 支持，维护（法律、原则等）。\n2. 保持，维持（传统、习惯等）。\n3. 确认，认可（判决、决定等）。",
+        "user_answer": "upvote",
+        "is_correct": false,
+        "added_to_difficult": false
+      },
+      {
+        "word": "diverge",
+        "meaning": "1. 分开，分叉\n2. 偏离，背离\n3. 分歧，不同\n4. 发散，扩散",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "P.E.",
+        "meaning": "1. 体育课（Physical Education的缩写）\n2. 体育教育\n3. 身体锻炼\n4. 体能训练",
+        "user_answer": "phys",
+        "is_correct": false,
+        "added_to_difficult": false
+      },
+      {
+        "word": "homely",
+        "meaning": "1. 朴素的；简单的；不讲究的。\n2. 家常的；舒适的；令人感到亲切的。\n3. 相貌平平的；不漂亮的。",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "vow",
+        "meaning": "1. 誓言；誓约\n2. 许愿；立誓\n3. 郑重宣告；公开承诺",
+        "user_answer": "不认识",
+        "is_correct": false,
+        "added_to_difficult": true
+      },
+      {
+        "word": "offensive",
+        "meaning": "1. 冒犯的；无礼的\n2. 进攻的；攻击性的\n3. 令人不快的；讨厌的\n4. 进攻性的；攻势的\n5. 令人反感的；令人厌恶的",
+        "user_answer": "vow",
+        "is_correct": false,
+        "added_to_difficult": false
+      },
+      {
+        "word": "closely",
+        "meaning": "1. 紧密地；密切地\n2. 仔细地；严密地\n3. 接近地；靠近地",
+        "user_answer": "closely",
+        "is_correct": true,
+        "added_to_difficult": false
+      },
+      {
+        "word": "hence",
+        "meaning": "1. 因此，所以\n2. 从此以后，从此时起\n3. 从这地方，离开这里",
+        "user_answer": "hence",
+        "is_correct": true,
+        "added_to_difficult": false
+      }
+    ]
+  }
+]

@@ -3,8 +3,16 @@
 import json
 import logging
 import sys
+import os
 
 from openai import OpenAI
+
+# Get the project root directory
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Create log directory if it doesn't exist
+log_dir = os.path.join(PROJECT_ROOT, 'log')
+os.makedirs(log_dir, exist_ok=True)
 
 # 配置日志系统
 logger = logging.getLogger('word_helper')
@@ -13,7 +21,8 @@ logger.setLevel(logging.INFO)
 # 检查是否已经有处理器，如果没有才添加
 if not logger.handlers:
     # 文件处理器
-    file_handler = logging.FileHandler('../log/word_requests.log', encoding='utf-8')
+    log_file = os.path.join(PROJECT_ROOT, 'log', 'word_requests.log')
+    file_handler = logging.FileHandler(log_file, encoding='utf-8')
     file_handler.setLevel(logging.INFO)
     file_formatter = logging.Formatter('%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
     file_handler.setFormatter(file_formatter)

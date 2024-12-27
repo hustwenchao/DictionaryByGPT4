@@ -34,3 +34,8 @@ src/ignore
 docs/.vitepress/cache
 docs/.vitepress/.temp
 docs/words/
+# User data directory
+user/
+
+# Log directory
+log/

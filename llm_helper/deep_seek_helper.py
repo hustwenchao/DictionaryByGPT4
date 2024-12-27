@@ -13,7 +13,7 @@ logger.setLevel(logging.INFO)
 # 检查是否已经有处理器，如果没有才添加
 if not logger.handlers:
     # 文件处理器
-    file_handler = logging.FileHandler('word_requests.log', encoding='utf-8')
+    file_handler = logging.FileHandler('../log/word_requests.log', encoding='utf-8')
     file_handler.setLevel(logging.INFO)
     file_formatter = logging.Formatter('%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
     file_handler.setFormatter(file_formatter)

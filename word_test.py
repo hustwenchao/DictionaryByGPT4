@@ -68,14 +68,14 @@ class WordTestApp(QMainWindow):
             
             # 加载生词本
             try:
-                with open('difficult_words.json', 'r', encoding='utf-8') as f:
+                with open('user/difficult_words.json', 'r', encoding='utf-8') as f:
                     self.difficult_words = json.load(f)
             except FileNotFoundError:
                 self.difficult_words = {}
                 
             # 加载已记住的单词
             try:
-                with open('mastered_words.json', 'r', encoding='utf-8') as f:
+                with open('user/mastered_words.json', 'r', encoding='utf-8') as f:
                     self.mastered_words = json.load(f)
             except FileNotFoundError:
                 self.mastered_words = []
@@ -212,7 +212,7 @@ class WordTestApp(QMainWindow):
         }
         
         # 保存生词本
-        with open('difficult_words.json', 'w', encoding='utf-8') as f:
+        with open('user/difficult_words.json', 'w', encoding='utf-8') as f:
             json.dump(self.difficult_words, f, ensure_ascii=False, indent=2)
         
         # 更新生词本统计
@@ -291,7 +291,7 @@ class WordTestApp(QMainWindow):
             if word not in self.mastered_words:
                 self.mastered_words.append(word)
                 # 保存已掌握单词列表
-                with open('mastered_words.json', 'w', encoding='utf-8') as f:
+                with open('user/mastered_words.json', 'w', encoding='utf-8') as f:
                     json.dump(self.mastered_words, f, ensure_ascii=False, indent=2)
                 self.update_mastered_words_label()
             
@@ -303,7 +303,7 @@ class WordTestApp(QMainWindow):
                     del self.difficult_words[word]
                     QMessageBox.information(self, "恭喜", f"单词 {word} 已经掌握，已从生词本中移除！")
                 # 保存生词本
-                with open('difficult_words.json', 'w', encoding='utf-8') as f:
+                with open('user/difficult_words.json', 'w', encoding='utf-8') as f:
                     json.dump(self.difficult_words, f, ensure_ascii=False, indent=2)
                 self.update_difficult_words_label()
         else:

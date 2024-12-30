@@ -12,10 +12,11 @@ os.environ['QT_LOGGING_RULES'] = '*.debug=false;qt.qpa.*=false'
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                             QHBoxLayout, QLabel, QLineEdit, QPushButton,
                             QMessageBox)
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, QThread, QObject, pyqtSignal
 from PyQt6.QtGui import QFont
 
 from llm_helper.deep_seek_helper import get_word_meaning
+from quest_generator import QuestGenerator
 
 class WordTestApp(QMainWindow):
     def __init__(self):
@@ -202,7 +203,7 @@ class WordTestApp(QMainWindow):
             return
             
         word = self.current_words[self.current_index]
-        meaning = get_word_meaning(word)
+        meaning = self.worker.get_word_meaning(word)
 
         # 添加到生词本
         self.difficult_words[word] = {
@@ -256,12 +257,35 @@ class WordTestApp(QMainWindow):
         self.current_index = 0
         self.correct_count = 0
         self.test_results = []
-        self.show_current_word()
+
+        self.start_quest_task()
+
+    def start_quest_task(self):
+        # 创建线程和worker对象
+        self.thread = QThread()
+        self.worker = QuestGenerator()
+        self.worker.moveToThread(self.thread)
+
+        self.worker.add_words(self.current_words)
+
+        # 将 Worker 移动到线程中
+        self.thread.started.connect(self.worker.generate_quest)
+        self.worker.progress.connect(self.update_progress)
+        self.worker.finished.connect(self.thread.quit)
+        self.worker.finished.connect(self.worker.deleteLater)
+        self.thread.finished.connect(self.thread.deleteLater)
+        
+        # 启动线程
+        self.thread.start()
+
+    def update_progress(self, progress):
+        if progress == 1:
+            self.show_current_word()
         
     def show_current_word(self):
         if self.current_index < len(self.current_words):
             word = self.current_words[self.current_index]
-            meaning = get_word_meaning(word)
+            meaning = self.worker.get_word_meaning(word)
             hint = f"提示：单词以 {word[0].upper()} 开头，总长度为 {len(word)} 个字母"
             self.word_label.setText(f"{meaning}\n\n{hint}")
             self.progress_label.setText("进度：%d/10" % (self.current_index + 1))
@@ -278,7 +302,7 @@ class WordTestApp(QMainWindow):
             
         user_answer = self.answer_entry.text().strip().lower()
         word = self.current_words[self.current_index]
-        meaning = get_word_meaning(word)
+        meaning = self.worker.get_word_meaning(word)
         
         # 检查答案是否正确（完全匹配）
         is_correct = user_answer == word.lower()

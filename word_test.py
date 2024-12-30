@@ -341,7 +341,7 @@ class WordTestApp(QMainWindow):
         try:
             # 读取现有结果
             try:
-                with open('test_results.json', 'r', encoding='utf-8') as f:
+                with open('user/test_results.json', 'r', encoding='utf-8') as f:
                     all_results = json.load(f)
             except FileNotFoundError:
                 all_results = []
@@ -350,7 +350,7 @@ class WordTestApp(QMainWindow):
             all_results.append(result_data)
             
             # 保存所有结果
-            with open('test_results.json', 'w', encoding='utf-8') as f:
+            with open('user/test_results.json', 'w', encoding='utf-8') as f:
                 json.dump(all_results, f, ensure_ascii=False, indent=2)
                 
         except Exception as e:

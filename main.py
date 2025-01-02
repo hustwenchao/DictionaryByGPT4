@@ -14,6 +14,7 @@ from PyQt6.QtWidgets import (
     QPushButton,
     QMessageBox,
     QDialog,
+    QScrollArea,
 )
 from PyQt6.QtCore import Qt, QThread
 from PyQt6.QtGui import QFont
@@ -106,7 +107,7 @@ class WordTestApp(QMainWindow):
             msg.setWindowFlags(msg.windowFlags())
             if msg.exec() == QMessageBox.StandardButton.Yes:
                 # 确保之前的线程已经清理
-                if hasattr(self, 'thread') and isinstance(self.thread, QThread):
+                if hasattr(self, "thread") and isinstance(self.thread, QThread):
                     if self.thread.isRunning():
                         self.thread.quit()
                         self.thread.wait()
@@ -118,19 +119,68 @@ class WordTestApp(QMainWindow):
         self.title_label = create_title_label()
         self.layout.addWidget(self.title_label)
 
+        # 创建滚动区域
+        scroll_area = QScrollArea()
+        scroll_area.setWidgetResizable(True)
+        scroll_area.setMinimumHeight(200)  # 设置最小高度
+        scroll_area.setStyleSheet(
+            """
+            QScrollArea {
+                border: none;
+                background-color: transparent;
+            }
+            QScrollBar:vertical {
+                border: none;
+                background: #f0f0f0;
+                width: 10px;
+                margin: 0px;
+            }
+            QScrollBar::handle:vertical {
+                background: #c1c1c1;
+                min-height: 30px;
+                border-radius: 5px;
+            }
+            QScrollBar::handle:vertical:hover {
+                background: #a8a8a8;
+            }
+        """
+        )
+
+        # 创建一个容器widget来放置word_label
+        container = QWidget()
+        container_layout = QVBoxLayout(container)
+        container_layout.setContentsMargins(0, 0, 0, 0)
+
         # 单词显示区域
-        self.word_label = create_word_label()
-        self.layout.addWidget(self.word_label)
+        self.word_label = QLabel()
+        self.word_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.word_label.setFont(QFont("Arial", 14))  # 减小字体大小
+        self.word_label.setWordWrap(True)
+        self.word_label.setTextFormat(Qt.TextFormat.RichText)  # 启用富文本支持
+        self.word_label.setStyleSheet(
+            """
+            QLabel {
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                border: 1px solid #e0e0e0;
+            }
+        """
+        )
+
+        container_layout.addWidget(self.word_label)
+        scroll_area.setWidget(container)
+        self.layout.addWidget(scroll_area)
 
         # 答案输入区域
         self.answer_entry = QLineEdit()
         self.submit_btn = QPushButton("提交")
         self.dont_know_btn = QPushButton("不认识")
-        
+
         self.answer_entry.returnPressed.connect(self.check_answer)
         self.submit_btn.clicked.connect(self.check_answer)
         self.dont_know_btn.clicked.connect(self.show_word_meaning)
-        
+
         input_layout = create_input_layout(
             self.answer_entry, self.submit_btn, self.dont_know_btn
         )
@@ -211,12 +261,15 @@ class WordTestApp(QMainWindow):
         words_per_test = self.settings.get("words_per_test", 10)
         difficult_words_list = list(self.word_manager.difficult_words.keys())
         regular_words_list = [
-            word for word in self.word_manager.words_data 
+            word
+            for word in self.word_manager.words_data
             if word not in self.word_manager.difficult_words
         ]
 
         # 计算生词和普通单词的比例
-        difficult_count = min(int(words_per_test * 0.3), len(difficult_words_list))  # 30%是生词
+        difficult_count = min(
+            int(words_per_test * 0.3), len(difficult_words_list)
+        )  # 30%是生词
         regular_count = words_per_test - difficult_count  # 剩余的是普通单词
 
         selected_difficult = (
@@ -237,7 +290,7 @@ class WordTestApp(QMainWindow):
     def start_quest_task(self):
         """启动问题生成任务"""
         # 确保之前的线程已经清理
-        if hasattr(self, 'thread') and isinstance(self.thread, QThread):
+        if hasattr(self, "thread") and isinstance(self.thread, QThread):
             if self.thread.isRunning():
                 self.thread.quit()
                 self.thread.wait()
@@ -266,13 +319,25 @@ class WordTestApp(QMainWindow):
         if self.current_index < len(self.word_manager.current_words):
             word = self.word_manager.current_words[self.current_index]
             meaning = self.worker.get_word_meaning(word)
-            hint = f"提示：单词以 {word[0].upper()} 开头，总长度为 {len(word)} 个字母"
-            
-            self.word_label.setText(f"{meaning}\n\n{hint}")
+            # 使用HTML格式化文本
+            formatted_meaning = (
+                "<div style='text-align: left; margin-bottom: 20px;'>"
+                + meaning.replace("\n", "<br>")
+                + "</div>"
+            )
+            hint = (
+                "<div style='text-align: center; margin-top: 10px; font-size: 15px;'>"
+                "提示：单词以 <span style='color: #3498db; font-weight: bold;'>"
+                f"{word[0]}</span> 开头，总长度为 "
+                f"<span style='color: #e74c3c; font-weight: bold;'>{len(word)}</span> 个字母"
+                "</div>"
+            )
+
+            self.word_label.setText(f"{formatted_meaning}{hint}")
             total_words = len(self.word_manager.current_words)
             self.progress_label.setText(f"进度：{self.current_index + 1}/{total_words}")
             self.score_label.setText(f"当前得分：{self.correct_count}")
-            
+
             self.answer_entry.clear()
             self.answer_entry.setFocus()
         else:
@@ -375,11 +440,12 @@ class WordTestApp(QMainWindow):
 
     def closeEvent(self, event):
         """窗口关闭事件"""
-        if hasattr(self, 'thread') and isinstance(self.thread, QThread):
+        if hasattr(self, "thread") and isinstance(self.thread, QThread):
             if self.thread.isRunning():
                 self.thread.quit()
                 self.thread.wait()
         event.accept()
+
 
 def main():
     app = QApplication(sys.argv)
